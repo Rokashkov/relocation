@@ -1,0 +1,20 @@
+@use '../../../../../styles/root'
+
+.wrapper
+	display: flex
+	flex-direction: row
+	align-items: center
+	height: 100%
+
+.icon
+	width: 24px
+	height: 24px
+
+.icon
+	svg
+		fill: root.$colorLight
+		transition: fill 0.3s ease
+
+.icon:hover
+	svg
+		fill: root.$colorBrightest

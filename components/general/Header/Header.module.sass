@@ -1,0 +1,34 @@
+@use '../../../styles/root'
+	
+.header
+	position: fixed
+	z-index: 100
+	display: flex
+	flex-direction: row
+	flex-wrap: nowrap
+	justify-content: space-between
+	width: 100%
+	max-width: root.$headerMaxWidth
+	height: root.$headerHeight
+	background-color: root.$headerBackgroundColor
+
+.shadow
+	position: absolute
+	width: 100%
+	height: 8px
+	background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))
+	bottom: -8px
+
+.right
+	margin-right: 8px
+	gap: 8px
+
+@media screen and (min-width: 1000px)
+	.header
+		left: calc((100% - root.$headerMaxWidth) / 2)
+		
+
+@media screen and (max-width: 999px)
+	.header
+		left: 0
+	

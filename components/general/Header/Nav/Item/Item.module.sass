@@ -1,0 +1,20 @@
+@use '../../../../../styles/root'
+	
+.item
+	display: flex
+	flex-direction: row
+	align-items: center
+	height: 100%
+	padding: 0 20px
+
+.text
+	font-size: 14px
+	color: root.$colorLight
+	transition: color 0.3s ease
+
+.item:hover
+	.text
+		color: root.$colorBrightest
+
+.item.active
+	background-color: root.$colorDarkest

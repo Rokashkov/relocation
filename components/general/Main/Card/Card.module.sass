@@ -1,0 +1,41 @@
+@use '../../../../styles/root'
+	
+.card
+	display: flex
+	flex-direction: column
+	flex-wrap: nowrap
+	align-items: center
+	gap: 20px
+	width: calc(25% - 7.5px)
+	min-width: 250px
+	padding: 20px 30px
+	border-radius: 10px
+	background-color: root.$colorSemiDark
+	cursor: pointer
+	transition: all 0.3s ease
+
+.card:hover
+	box-shadow: 0 0 10px black
+	background-color: root.$colorDark
+	color: root.$colorBrightest
+
+	.icon
+		svg
+			fill: root.$colorBrightest
+
+.card:active
+	box-shadow: none
+
+.icon
+	width: 80px
+
+	svg
+		fill: root.$colorLight
+		transition: fill 0.3s ease
+
+.title
+	font-weight: 700
+	font-size: 24px
+
+.description
+	flex-grow: 1
