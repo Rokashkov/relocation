@@ -1,0 +1,17 @@
+@use '../../../../styles/root'
+	
+.anchor
+	align-self: flex-start
+	font-size: 32px
+	font-weight: 400
+	color: root.$colorAnchorInactive
+	transition: color 0.3s ease
+
+.anchor:visited
+	color: root.$colorAnchorVisitedInactive
+
+.anchor:hover
+	color: root.$colorAnchorActive
+
+.anchor:visited:hover
+	color: root.$colorAnchorVisitedActive

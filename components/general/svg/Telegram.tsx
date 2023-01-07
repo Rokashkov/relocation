@@ -1,9 +1,4 @@
-interface TelegramProps {
-	
-}
-
-export default function Telegram (props: TelegramProps) {
-	const {  } = props
+export default function Telegram () {
 	
 	return (
 		<svg

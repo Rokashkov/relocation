@@ -1,4 +1,5 @@
 import Layout from '../components/general/Layout/Layout'
+import Slide from '../components/general/Main/Slide/Slide'
 
 interface ErrorProps {
 	statusCode: number
@@ -9,7 +10,10 @@ export default function Error (props: ErrorProps) {
 	
 	return (
 		<Layout>
-			<div>{ statusCode }</div>
+			<Slide>
+				<h1>Error</h1>
+				<h2>:(</h2>
+			</Slide>
 		</Layout>
 	)
 }

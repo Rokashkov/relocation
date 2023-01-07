@@ -1,4 +1,4 @@
-@use '../../../../styles/root'
+@use '../../../../../styles/root'
 	
 .card
 	display: flex
@@ -6,17 +6,15 @@
 	flex-wrap: nowrap
 	align-items: center
 	gap: 20px
-	width: calc(25% - 7.5px)
+	width: calc(25% - 60px / 4)
 	min-width: 250px
 	padding: 20px 30px
 	border-radius: 10px
-	background-color: root.$colorSemiDark
-	cursor: pointer
 	transition: all 0.3s ease
+	box-shadow: 0 0 8px 1px black
 
 .card:hover
-	box-shadow: 0 0 10px black
-	background-color: root.$colorDark
+	box-shadow: 0 0 12px 2px black
 	color: root.$colorBrightest
 
 	.icon

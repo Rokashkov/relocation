@@ -54,10 +54,10 @@ export default function Header (props: HeaderProps) {
 				<Item href='/contacts'>Contacts</Item>
 			</Nav>
 			<Nav className={ styles.right }>
-				<Icon href='/about'>
+				<Icon href={ process.env.NEXT_PUBLIC_GITHUB_URL }>
 					<GitHub/>
 				</Icon>
-				<Icon href='/about'>
+				<Icon href={ process.env.NEXT_PUBLIC_TELEGRAM_URL }>
 					<Telegram/>
 				</Icon>
 			</Nav>

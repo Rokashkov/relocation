@@ -12,6 +12,8 @@ export default function Icon (props: IconProps) {
 		<div className={ styles.wrapper }>
 			<a
 				href={ href }
+				target="_blank"
+				rel="noreferrer"
 				className={ styles.icon }
 			>
 				{ children }

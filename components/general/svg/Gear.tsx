@@ -1,10 +1,5 @@
-interface GearProps {
-	
-}
+export default function Gear () {
 
-export default function Gear (props: GearProps) {
-	const {  } = props
-	
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"

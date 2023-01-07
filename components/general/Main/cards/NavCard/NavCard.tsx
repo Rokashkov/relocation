@@ -1,7 +1,7 @@
-import Button from '../Button/Button'
-import styles from './Card.module.sass'
+import Button from '../../Button/Button'
+import styles from './NavCard.module.sass'
 
-interface CardProps {
+interface NavCardProps {
 	children?: JSX.Element | JSX.Element[] | string
 	title?: string
 	icon?: JSX.Element
@@ -9,7 +9,7 @@ interface CardProps {
 	linkText?: string
 }
 
-export default function Card (props: CardProps) {
+export default function NavCard (props: NavCardProps) {
 	const { children, title, icon, href, linkText } = props
 	
 	return (

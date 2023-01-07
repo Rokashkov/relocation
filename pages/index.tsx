@@ -1,7 +1,6 @@
 import Layout from '../components/general/Layout/Layout'
-import Card from '../components/general/Main/Card/Card'
-import CardBoard from '../components/general/Main/CardBoard/CardBoard'
-import Section from '../components/general/Main/Section/Section'
+import NavCard from '../components/general/Main/cards/NavCard/NavCard'
+import Board from '../components/general/Main/boards/Board'
 import Slide from '../components/general/Main/Slide/Slide'
 import Gallery from '../components/general/svg/Gallery'
 import Gear from '../components/general/svg/Gear'
@@ -20,40 +19,40 @@ export default function Index () {
 			<Slide>
 				<h1>There</h1>
 				<h2>You Can Find</h2>
-				<CardBoard>
-					<Card
+				<Board style={ { paddingBottom: 0 } }>
+					<NavCard
 						icon={ <User/> }
 						title="About Me"
 						href="/about"
 						linkText='Meet'
 					>
 						To introduce myself, I have a whole page about me, my skills and my bio
-					</Card>
-					<Card
+					</NavCard>
+					<NavCard
 						icon={ <Gear/> }
 						title="My Projects"
 						href="/projects"
 						linkText='Check'
 					>
 						Check my projects and a short summary for each of them
-					</Card>
-					<Card
+					</NavCard>
+					<NavCard
 						icon={ <Gallery/> }
 						title="Gallery"
 						href="/gallery"
 						linkText='Watch'
 					>
 						You can watch my personal gallery of some cool solutions and apps
-					</Card>
-					<Card
+					</NavCard>
+					<NavCard
 						icon={ <Telegram/> }
 						title="My Contacts"
 						href="/contacts"
 						linkText='Visit'
 					>
 						If you want to contact me, you probably should visit this page
-					</Card>
-				</CardBoard>
+					</NavCard>
+				</Board>
 			</Slide>
 		</Layout>
 	)

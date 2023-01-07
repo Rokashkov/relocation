@@ -1,11 +1,6 @@
 import styles from './Background.module.sass'
 
-interface BackgroundProps {
-	
-}
-
-export default function Background (props: BackgroundProps) {
-	const {  } = props
+export default function Background () {
 	
 	return (
 		<svg

@@ -1,9 +1,4 @@
-interface UserProps {
-	
-}
-
-export default function User (props: UserProps) {
-	const {  } = props
+export default function User () {
 	
 	return (
 		<svg
