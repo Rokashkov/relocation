@@ -4,7 +4,6 @@ import { createServer as createHTTPServer } from 'http'
 import { createServer as createHTTPSServer } from 'https'
 import { resolve } from 'path'
 import { readFileSync } from 'fs'
-import redirect from './redirect'
 
 async function start () {
 	const app = next({})
@@ -18,6 +17,12 @@ async function start () {
 	server.all('*', (req: Request, res: Response) => {
 		const handle =  app.getRequestHandler()
 		return handle(req, res)
+	})
+
+	const redirect = express()
+
+	redirect.get('*', (req, res) => {
+		res.redirect(`https://${ req.headers.host + req.originalUrl}`)
 	})
 
 	const __certs = resolve(__dirname, '..', '..', 'etc', 'letsencrypt', 'live', 'rokashkov.ru')
