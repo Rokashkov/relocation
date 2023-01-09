@@ -22,7 +22,7 @@ export default function Index () {
 				<Board style={ { paddingBottom: 0 } }>
 					<NavCard
 						icon={ <User/> }
-						title="About Me"
+						title="About"
 						href="/about"
 						linkText='Meet'
 					>
@@ -30,7 +30,7 @@ export default function Index () {
 					</NavCard>
 					<NavCard
 						icon={ <Gear/> }
-						title="My Projects"
+						title="Projects"
 						href="/projects"
 						linkText='Check'
 					>
@@ -46,7 +46,7 @@ export default function Index () {
 					</NavCard>
 					<NavCard
 						icon={ <Telegram/> }
-						title="My Contacts"
+						title="Contacts"
 						href="/contacts"
 						linkText='Visit'
 					>
